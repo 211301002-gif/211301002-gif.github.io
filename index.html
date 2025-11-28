@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajeebba Yasmin — Portfolio</title>
+  <meta name="description" content="Ajeebba Yasmin — Developer • Data Scientist" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#home">Ajeebba Yasmin</a>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I’m Ajeebba Yasmin<span class="accent">.</span></h1>
+          <p class="lead">I work on data-driven software and analytics — building models, visualizations, and production-ready pipelines.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </p>
+          <p class="socials">
+            <a href="https://github.com/211301002-gif" target="_blank" rel="noopener">GitHub</a> •
+            <a href="#contact">Resume</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>This site is generated from the resume in this repository. For full details, open <a href="resume.pdf" target="_blank" rel="noopener">the resume (PDF)</a>.</p>
+        <p>Replace this text in index.html to personalize your bio. I’ve kept the design minimal and mobile-first.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Selected projects</h2>
+        <div id="projects-grid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="chips" id="skills-list">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you’d like to work together or say hi, open the resume (linked below) to find contact details.</p>
+        <a class="btn primary" href="resume.pdf" target="_blank" rel="noopener">Open resume (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Ajeebba Yasmin — Built with ❤️</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
