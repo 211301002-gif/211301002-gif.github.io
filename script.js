@@ -1,4 +1,4 @@
-// script.js - renders projects and skills on the portfolio
+// script.js - renders projects and skills on the portfolio (safe checks + full skills from resume)
 
 const projects = [
   {
@@ -46,11 +46,13 @@ const projects = [
 ];
 
 const skills = [
+  // Skills pulled/expanded from your resume
   "Python",
   "Pandas",
   "NumPy",
   "scikit-learn",
   "TensorFlow",
+  "Keras",
   "OpenCV",
   "SQL",
   "Power BI",
@@ -59,24 +61,34 @@ const skills = [
   "Data Visualization",
   "Matplotlib",
   "Seaborn",
+  "Plotly",
+  "Tableau",
   "Machine Learning",
-  "Time Series Forecasting",
-  "LSTM",
+  "Deep Learning",
   "NLP",
+  "LSTM",
+  "Time Series Forecasting",
+  "Regression",
+  "Classification",
   "Multinomial Naive Bayes",
   "CountVectorizer",
-  "Data Modeling",
   "ETL",
+  "Data Cleaning",
   "Feature Engineering",
   "Model Deployment",
   "Model Monitoring",
+  "Model Evaluation",
   "MinMaxScaler",
+  "Cross Validation",
+  "Hyperparameter Tuning",
+  "Business Intelligence",
+  "Data Storytelling",
   "Git",
   "Docker",
-  "Business Intelligence",
-  "Regression",
-  "Data Cleaning",
-  "Data Storytelling"
+  "AWS (basic)",
+  "Data Modeling",
+  "Star Schema",
+  "Snowflake Schema"
 ];
 
 function el(tag, className, inner = "") {
@@ -88,7 +100,9 @@ function el(tag, className, inner = "") {
 
 function renderProjects() {
   const grid = document.getElementById("projects-grid");
+  if (!grid) return;
   grid.innerHTML = ""; // clear existing
+
   projects.forEach(p => {
     const card = el("article", "card project-card");
     const header = el("div", "card-header");
@@ -112,6 +126,9 @@ function renderProjects() {
       a.target = "_blank";
       a.rel = "noopener";
       actions.appendChild(a);
+    } else {
+      // keep consistent layout if no repo
+      actions.appendChild(el("span", "muted", "Repo not available"));
     }
     card.appendChild(actions);
     grid.appendChild(card);
@@ -120,12 +137,15 @@ function renderProjects() {
 
 function renderSkills() {
   const wrap = document.getElementById("skills-list");
+  if (!wrap) return;
   wrap.innerHTML = ""; // clear existing
   skills.forEach(s => wrap.appendChild(el("span", "chip", s)));
 }
 
 function setYear() {
-  document.getElementById("year").textContent = new Date().getFullYear();
+  const y = document.getElementById("year");
+  if (!y) return;
+  y.textContent = new Date().getFullYear();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
