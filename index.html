@@ -6,30 +6,25 @@
   <title>Ajeebba Yasmin — Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<!-- MODAL POPUP -->
-<div id="project-modal" class="modal hidden">
-  <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <img id="modal-img" class="modal-img" alt="Project Image">
-    <h3 id="modal-title"></h3>
-    <p id="modal-desc"></p>
+<body>
 
-    <div id="modal-tags" class="modal-tags"></div>
+  <!-- MODAL POPUP -->
+  <div id="project-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <img id="modal-img" class="modal-img" alt="Project Image">
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
 
-    <div class="modal-actions">
-      <a id="modal-github" class="btn primary" target="_blank">GitHub</a>
-      <a id="modal-streamlit" class="btn ghost" target="_blank">Live Demo</a>
+      <div id="modal-tags" class="modal-tags"></div>
+
+      <div class="modal-actions">
+        <a id="modal-github" class="btn primary" target="_blank">GitHub</a>
+        <a id="modal-streamlit" class="btn ghost" target="_blank">Live Demo</a>
+      </div>
     </div>
   </div>
-</div>
 
-<!-- Social Footer Icons -->
-<footer class="footer-icons">
-  <a href="mailto:yasminajeebba@gmail.com" class="icon">&#9993;</a>
-  <a href="https://github.com/211301002-gif" class="icon" target="_blank">🐙</a>
-  <a href="https://www.linkedin.com/in/ajeebba-yasmin-463102249" class="icon" target="_blank">🔗</a>
-</footer>
-<body>
   <header class="nav">
     <div class="container nav-inner">
       <div class="brand"><a href="/">Ajeebba Yasmin</a></div>
@@ -47,7 +42,10 @@
       <div class="hero-inner">
         <div class="hero-text">
           <h1>Ajeebba Yasmin</h1>
-          <p class="lead">An enthusiastic and self-motivated Data Scientist with hands-on experience in analytics, statistical modeling, and Python‑based data workflows. Skilled in translating complex business requirements into analytical solutions through data‑driven insights, visualization, and storytelling. Proficient in Python, SQL, and BI tools with a strong foundation in regression, time‑series forecasting, and machine learning. Adept at collaborating with cross‑functional teams to deliver actionable insights through dashboards. Known for meticulous attention to detail, logical problem‑solving, and a continuous improvement mindset.</p>
+          <p class="lead">
+            An enthusiastic and self-motivated Data Scientist with hands-on experience
+            in analytics, statistical modeling, and Python-based data workflows...
+          </p>
           <p>
             <a class="btn primary" href="#projects">View projects</a>
             <a class="btn ghost" href="resume.pdf" target="_blank">Resume (PDF)</a>
@@ -65,14 +63,21 @@
       <h2>Skills</h2>
       <div id="skills-list" class="chips"></div>
     </section>
-
   </main>
 
   <footer class="site-footer container">
-    <div>© <span id="year"></span> Ajeebba Yasmin — <a href="https://www.linkedin.com/in/ajeebba-yasmin-463102249" target="_blank" rel="noopener">LinkedIn</a></div>
+    <div>© <span id="year"></span> Ajeebba Yasmin —
+      <a href="https://www.linkedin.com/in/ajeebba-yasmin-463102249" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </footer>
 
-  <!-- Use a relative path so GitHub Pages and local previews find the JS reliably -->
+  <!-- Social Footer Icons -->
+  <footer class="footer-icons">
+    <a href="mailto:yasminajeebba@gmail.com" class="icon">&#9993;</a>
+    <a href="https://github.com/211301002-gif" class="icon" target="_blank">🐙</a>
+    <a href="https://www.linkedin.com/in/ajeebba-yasmin-463102249" class="icon" target="_blank">🔗</a>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
