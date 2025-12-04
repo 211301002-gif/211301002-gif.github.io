@@ -20,7 +20,7 @@ const skillIcons = {
 const projects = [
   {
     title: "CAR PLATE BLURRER",
-    image: "images/car_plate.png",
+    image: "car_plate.png",
     date: "October 2025",
     description: "Real-time Streamlit web app using OpenCV...",
     repoUrl: "https://github.com/211301002-gif/Car-Plate-Blurring-",
@@ -30,7 +30,7 @@ const projects = [
 
   {
     title: "STOCK MARKET FORECASTING",
-    image: "images/stock.png",
+    image: "stock.png",
     date: "October 2025",
     description: "LSTM model for stock prediction...",
     repoUrl: "https://github.com/211301002-gif/stock-market-",
@@ -40,7 +40,7 @@ const projects = [
 
   {
     title: "SPAM DETECTION NLP APP",
-    image: "images/spam.png",
+    image: "spam.png",
     date: "2025",
     description: "NLP spam classifier using Naive Bayes...",
     repoUrl: "https://github.com/211301002-gif/spam-detector",
