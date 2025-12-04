@@ -284,3 +284,90 @@ body{
   .nav a{display:none}
   .nav-inner{gap:.5rem}
 }
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  z-index: 999;
+}
+.hidden {
+  display: none !important;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  width: 600px;
+  max-width: 90%;
+  border-radius: 10px;
+  position: relative;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.modal-close {
+  position: absolute;
+  font-size: 26px;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  color: #444;
+}
+
+.modal-img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.modal-tags .tag {
+  display: inline-block;
+  background: #eef3ff;
+  border: 1px solid #cddcff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.modal-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+.footer-icons {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-icons .icon {
+  font-size: 28px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.2s;
+}
+
+.footer-icons .icon:hover {
+  color: #007bff;
+  transform: scale(1.15);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  background: #eef1ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccd5ff;
+}
+
+.chip img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
